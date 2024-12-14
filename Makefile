@@ -6,15 +6,13 @@
 #    By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/27 16:49:46 by calguaci          #+#    #+#              #
-#    Updated: 2024/10/27 16:50:22 by calguaci         ###   ########.fr        #
+#    Updated: 2024/12/14 17:55:42 by calguaci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libftprintf.a
-SRCS	= ft_printf.c ft_put.c
+SRCS	= ft_printf.c ft_put.c ft_printf_extra.c
 OBJS	= ${SRCS:.c=.o}
-SRCSLIB	= libft/ft_strlen.c
-OBJSLIB = ${SRCSLIB:.c=.o}
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
 RM		= rm -f
@@ -27,11 +25,11 @@ ARF		= ranlib
 all:		${NAME}
 
 ${NAME}:	${OBJSLIB} ${OBJS}
-			${AR} ${NAME} ${OBJSLIB} ${OBJS}
+			${AR} ${NAME} ${OBJS}
 			${ARF} ${NAME}
 
 clean:
-			${RM} ${OBJSLIB} ${OBJS}
+			${RM} ${OBJS}
 
 fclean:		clean
 			${RM} ${NAME}

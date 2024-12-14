@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 16:49:32 by calguaci          #+#    #+#             */
-/*   Updated: 2024/10/27 18:18:34 by calguaci         ###   ########.fr       */
+/*   Created: 2024/12/14 18:08:02 by calguaci          #+#    #+#             */
+/*   Updated: 2024/12/14 18:10:15 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,23 +69,22 @@ int	ft_printf(char const *valor, ...)
 	return (n);
 }
 
-// #include "ft_printf.h"
 
-// int main(void)
-// {
-//     int num = 42;
-//     char c = 'A';
-//     char *str = "Hola, mundo!";
-//     void *ptr = &num;
+int main(void)
+{
+    int num = 42;
+    char c = 'A';
+    char *str = "Hola, mundo!";
+    void *ptr = &num;
 
-//     ft_printf("Número: %d\n", num);
-//     ft_printf("Caracter: %c\n", c);
-//     ft_printf("Cadena: %s\n", str);
-//     ft_printf("Puntero: %p\n", ptr);
-//     ft_printf("Número sin signo: %u\n", num);
-//     ft_printf("Hexadecimal (minúsculas): %x\n", num);
-//     ft_printf("Hexadecimal (mayúsculas): %X\n", num);
-//     ft_printf("Porcentaje: %%\n");
+    ft_printf("Número: %d\n", num);
+    ft_printf("Caracter: %c\n", c);
+    ft_printf("Cadena: %s\n", str);
+    ft_printf("Puntero: %p\n", ptr);
+    ft_printf("Número sin signo: %u\n", num);
+    ft_printf("Hexadecimal (minúsculas): %x\n", num);
+    ft_printf("Hexadecimal (mayúsculas): %X\n", num);
+    ft_printf("Porcentaje: %%\n");
 
-//     return 0;
-// }
+    return 0;
+}
