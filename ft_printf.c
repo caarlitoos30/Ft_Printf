@@ -15,6 +15,7 @@
 static int	ft_pointer(void *p)
 {
 	size_t	nbr;
+	
 	if (!p)
 	{
 		ft_putstr("(nil)");
