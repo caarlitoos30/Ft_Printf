@@ -15,7 +15,11 @@
 static int	ft_pointer(void *p)
 {
 	size_t	nbr;
-
+	if (!p)
+	{
+		ft_putstr("(nil)");
+		return (ft_strlen("(nil)"));
+	}
 	nbr = (size_t)p;
 	write(1, "0x", 2);
 	return (ft_putptr_base(nbr) + 2);
